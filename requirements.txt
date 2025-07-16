@@ -1,0 +1,9 @@
+streamlit
+openai
+whisper
+opencv-python
+pillow
+deepface
+tesseract
+python-dotenv
+google-cloud-vision
