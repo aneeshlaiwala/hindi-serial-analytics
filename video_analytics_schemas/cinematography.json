@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Cinematography Metadata",
+  "type": "object",
+  "properties": {
+    "shots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "timestamp": {
+            "type": "string"
+          },
+          "shot_type": {
+            "type": "string"
+          },
+          "camera_movement": {
+            "type": "string"
+          },
+          "lighting": {
+            "type": "string"
+          },
+          "effect": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "timestamp",
+          "shot_type"
+        ]
+      }
+    }
+  }
+}

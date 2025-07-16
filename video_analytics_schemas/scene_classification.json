@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Scene Classification",
+  "type": "object",
+  "properties": {
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "timestamp": {
+            "type": "string"
+          },
+          "scene_type": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "characters_present": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "scene_tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "timestamp",
+          "scene_type"
+        ]
+      }
+    }
+  }
+}

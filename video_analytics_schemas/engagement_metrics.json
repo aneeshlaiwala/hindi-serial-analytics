@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Engagement and Retention Metrics",
+  "type": "object",
+  "properties": {
+    "segments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "timestamp_range": {
+            "type": "string"
+          },
+          "hook_strength": {
+            "type": "string"
+          },
+          "drop_risk": {
+            "type": "string"
+          },
+          "viewer_emotion": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "timestamp_range",
+          "hook_strength"
+        ]
+      }
+    }
+  }
+}

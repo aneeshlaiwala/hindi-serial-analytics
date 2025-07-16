@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Character Profiling",
+  "type": "object",
+  "properties": {
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "character_name": {
+            "type": "string"
+          },
+          "actor_name": {
+            "type": "string"
+          },
+          "role_type": {
+            "type": "string"
+          },
+          "emotion_distribution": {
+            "type": "object"
+          },
+          "screen_time_seconds": {
+            "type": "number"
+          },
+          "dialogue_share_percent": {
+            "type": "number"
+          },
+          "behavior_traits": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "body_language_descriptors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "timestamps": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "character_name",
+          "screen_time_seconds"
+        ]
+      }
+    }
+  }
+}

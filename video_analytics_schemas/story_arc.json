@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Story Arc Schema",
+  "type": "object",
+  "properties": {
+    "acts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "act_number": {
+            "type": "integer"
+          },
+          "act_title": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "timestamps": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "act_number",
+          "summary"
+        ]
+      }
+    },
+    "subplots": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

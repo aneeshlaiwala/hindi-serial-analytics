@@ -1,1 +1,47 @@
-dummy for now
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Program Metadata",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "episode_number": {
+      "type": "integer"
+    },
+    "air_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "channel": {
+      "type": "string"
+    },
+    "duration_minutes": {
+      "type": "integer"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "production_house": {
+      "type": "string"
+    },
+    "synopsis": {
+      "type": "string"
+    },
+    "season_number": {
+      "type": "integer"
+    },
+    "episode_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "episode_number",
+    "air_date",
+    "channel"
+  ]
+}
