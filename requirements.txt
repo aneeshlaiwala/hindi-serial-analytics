@@ -1,1 +1,7 @@
 streamlit
+openai
+pytesseract
+google-cloud-vision
+python-dotenv
+requests
+youtube_dl
